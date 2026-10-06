@@ -116,7 +116,7 @@ SELECT
     RANK() OVER (PARTITION BY anocontratacao ORDER BY numero_publicacoes DESC) AS ranking
 FROM ContagemPublicacoes;
 ```
-*(Caso tires um print do resultado no DBeaver, podes adicionar a imagem aqui: `![Resultado Ranking](Fotos/4pergunta.png)`)*
+![Resultado Ranking](Fotos/1perguntaMp2.png)
 
 ---
 
@@ -152,9 +152,10 @@ AFTER DELETE ON Artigos
 FOR EACH ROW
 EXECUTE FUNCTION fn_log_exclusao_artigo();
 ```
-*(Caso tires um print da tabela Log_Artigos_Excluidos após um teste, podes adicionar a imagem aqui: `![Resultado Trigger](Fotos/log_trigger.png)`)*
+![Resultado Trigger](Fotos/2perguntaMp2.png)
 
 ---
+
 
 ## 🚀 Como Executar o Projeto
 
