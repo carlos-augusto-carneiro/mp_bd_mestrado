@@ -19,7 +19,7 @@ O objetivo do banco de dados é gerenciar publicações de pesquisadores do depa
 A tabela `Artigos` funciona como a tabela associativa entre `Pesquisadores` e `Revistas_Conferencias`, armazenando os títulos e anos de publicação.
 
 ### Visualização do Schema / Tabelas Criadas:
-![Tabelas Criadas](tabelas_criadas.png)
+![Tabelas Criadas](Fotos/tabelas_criadas.png)
 
 ---
 
@@ -28,13 +28,13 @@ A tabela `Artigos` funciona como a tabela associativa entre `Pesquisadores` e `R
 Os dados foram inseridos de forma coerente e balanceada para garantir que as consultas analíticas retornem resultados significativos.
 
 ### Registros de Pesquisadores:
-![Pesquisadores](pesquisadores_criados.png)
+![Pesquisadores](Fotos/pesquisadores_criados.png)
 
 ### Registros de Revistas e Conferências:
-![Revistas e Conferências](revistas_criadas.png)
+![Revistas e Conferências](Fotos/revistas_criadas.png)
 
 ### Registros de Artigos Criados:
-![Artigos Criados](artigo_criado.png)
+![Artigos Criados](Fotos/artigo_criado.png)
 
 ---
 
@@ -55,7 +55,7 @@ ORDER BY num_publicacoes DESC
 LIMIT 3;
 ```
 **Resultado:**
-![Resultado Pergunta 1](1pergunta.png)
+![Resultado Pergunta 1](Fotos/1pergunta.png)
 
 ---
 
@@ -70,7 +70,7 @@ GROUP BY anopublicacao
 ORDER BY anopublicacao DESC;
 ```
 **Resultado:**
-![Resultado Pergunta 2](2pergunta.png)
+![Resultado Pergunta 2](Fotos/2pergunta.png)
 
 ---
 
@@ -86,7 +86,7 @@ GROUP BY rc.idlocal, rc.nomelocal
 HAVING COUNT(a.idartigo) > 2;
 ```
 **Resultado:**
-![Resultado Pergunta 3](3pergunta.png)
+![Resultado Pergunta 3](Fotos/3pergunta.png)
 
 ---
 
