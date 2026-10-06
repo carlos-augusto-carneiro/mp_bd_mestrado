@@ -5,9 +5,9 @@
 -- Data: 02/10/2026
 
 
-
--- Comandos DDSL
-
+=========================================================================================================
+-- Comandos DDL
+=========================================================================================================
 -- A tabela Artigos atua como entidade associativa conectand Pesquisadores e Revistas_Conferencias, 
 -- permitindo que um pesquisador possa ter vários artigos publicados em diferentes revistas ou conferências, 
 --e uma revista ou conferência possa ter vários artigos de diferentes pesquisadores.
@@ -21,7 +21,7 @@
 -- Foram utilizadas chaves primárias e estrangeiras para garantir a integridade referencial entre as tabelas,
 -- evitando inconsistências e violações de integridade dos dados. FK com NOT NULL para garantir que cada 
 -- artigo esteja associado a um pesquisador e a uma revista ou conferência.
-
+=========================================================================================================
 CREATE TABLE Pesquisadores 
 (
     idpesquisador serial PRIMARY KEY,
@@ -50,8 +50,9 @@ CREATE TABLE Artigos
     anopublicacao INT NOT NULL
 );
 
-
+=========================================================================================================
 -- Comandos DML
+=========================================================================================================
 
 -- Inserção de dados na tabela Pesquisadores
 INSERT INTO Pesquisadores (nome, afiliacao, anocontratacao) VALUES
@@ -194,8 +195,10 @@ INSERT INTO Artigos (idpesquisador, idlocal, titulo, anopublicacao) VALUES
 (7, 7, 'Generative Adversarial Networks for Image-to-Image Translation', 2020),
 (9, 20, 'Metabolic Engineering of Yeast for Biofuel Production', 2021);
 
-
+=========================================================================================================
 -- Perguntas
+=========================================================================================================
+
 -- 1 - Quais são os 3 pesquisadores com o maior número de publicações?
 -- Foi usado o count para contar a quantidade de artigos publicados por cada pesquisador, 
 -- agrupando pelo idpesquisador e nome, ordenando em ordem decrescente e limitando a 3 resultados.
